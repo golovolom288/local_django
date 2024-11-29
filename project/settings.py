@@ -5,12 +5,12 @@ env = Env()
 env.read_env()
 DATABASES = {
     'default': {
-        'DB_ENGINE': env.str("DB_ENGINE"),
-        'DB_HOST': env.str("DB_HOST"),
-        'DB_PORT': env.int("DB_PORT"),
-        'DB_NAME': env.str("DB_NAME"),
-        'DB_USER': env.str("DB_USER"),
-        'DB_PASSWORD': env.str("DB_PASSWORD")
+        'ENGINE': env.str("DB_ENGINE"),
+        'HOST': env.str("DB_HOST"),
+        'PORT': env.int("DB_PORT"),
+        'NAME': env.str("DB_NAME"),
+        'USER': env.str("DB_USER"),
+        'PASSWORD': env.str("DB_PASSWORD")
     }
 }
 
